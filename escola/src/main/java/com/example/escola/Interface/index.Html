@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Site</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="Index.CSS" />
+
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-900 text-white p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">Meu Site</h1>
+    <a href="#" class="hover:underline">Início</a>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <div class="max-w-4xl mx-auto mt-10">
+
+    <!-- Formulário de Cadastro -->
+    <section class="bg-white p-6 rounded shadow">
+      <h2 class="text-2xl font-bold mb-4">Formulário de Cadastro</h2>
+      <form id="cadastroForm" class="space-y-4">
+        <div>
+          <label for="nome" class="block font-semibold">Nome</label>
+          <input type="text" id="nome" name="nome" class="w-full border rounded p-2" />
+        </div>
+        <div>
+          <label for="email" class="block font-semibold">E-mail</label>
+          <input type="email" id="email" name="email" class="w-full border rounded p-2" />
+        </div>
+        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Adicionar</button>
+      </form>
+    </section>
+
+    <!-- Tabela de Cadastros -->
+    <section class="mt-10">
+      <h2 class="text-2xl font-bold mb-4 text-yellow-800">Tabela de Cadastros</h2>
+      <table class="w-full table-auto bg-white shadow rounded">
+        <thead class="bg-gray-200">
+          <tr>
+            <th class="px-4 py-2 text-left">Nome</th>
+            <th class="px-4 py-2 text-left">E-mail</th>
+            <th class="px-4 py-2 text-left">Ação</th>
+          </tr>
+        </thead>
+        <tbody id="tabelaBody">
+          <!-- Linhas serão inseridas aqui -->
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+</body>
+</html>
